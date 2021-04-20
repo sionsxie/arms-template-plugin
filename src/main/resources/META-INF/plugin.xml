@@ -1,10 +1,17 @@
 <idea-plugin>
     <id>com.github.sionsxie.armstemplateplugin</id>
     <name>arms-template-plugin</name>
-    <vendor>sionsxie</vendor>
+    <vendor url="http://www.baidu.com">sionsxie</vendor>
+
+    <description>
+        一键创建 MVPArms 单个页面所需要的全部组件&lt;br /&gt;
+    </description>
 
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <depends>org.jetbrains.android</depends>
+    <depends>org.jetbrains.kotlin</depends>
+    <depends>com.intellij.modules.java</depends>
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
@@ -16,4 +23,8 @@
         <listener class="com.github.sionsxie.armstemplateplugin.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </applicationListeners>
+
+    <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
+        <wizardTemplateProvider implementation="other.ArmsPluginTemplateProviderImpl" />
+    </extensions>
 </idea-plugin>

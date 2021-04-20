@@ -26,10 +26,13 @@ version = properties("pluginVersion")
 // Configure project's dependencies
 repositories {
     mavenCentral()
+    google()
+    maven { setUrl("https://maven.aliyun.com/repository/public") } //阿里云jcenter 替换 原本的jcenter，jcenter在2022.2.1将不可用
     jcenter()
 }
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.16.0")
+    compileOnly(files("libs/wizard-template.jar"))
 }
 
 // Configure gradle-intellij-plugin plugin.
