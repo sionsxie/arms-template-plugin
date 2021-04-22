@@ -4,7 +4,7 @@
 
     打开 [intellij-platform-plugin-template](https://github.com/JetBrains/intellij-platform-plugin-template) 点击那个绿色按钮 Use this template 把这个项目copy到自己的Git下，
     然后下载下来进行相应的修改，如下图
-    ![]("")
+    ![]("https://github.com/sionsxie/arms-template-plugin/blob/main/imgs/1.png")
 
 # 2.修改相应位置
        gradle.properties
@@ -39,6 +39,12 @@
 
 # 3.添加自己的模板代码
        参考other里的代码
+
+# 4.生成插件Jar
+        如下图，运行那个都行
+        ![]("https://github.com/sionsxie/arms-template-plugin/blob/main/imgs/2.png")
+        ![]("https://github.com/sionsxie/arms-template-plugin/blob/main/imgs/3.png")
+
 
 tip：
    - 入口必须为WizardTemplateProvider的派生类
