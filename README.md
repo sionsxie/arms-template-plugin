@@ -1,4 +1,4 @@
-### Android Studio 4.1中的模板基本说明插件
+### Android Studio 4.1中的模板插件基本说明
 
 # 1.使用JetBrains IntelliJ 插件模板
 
