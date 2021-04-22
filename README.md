@@ -2,8 +2,8 @@
 
 # 1.使用JetBrains IntelliJ 插件模板
 
-    打开 [intellij-platform-plugin-template](https://github.com/JetBrains/intellij-platform-plugin-template) 点击那个绿色按钮 Use this template 把这个项目copy到自己的Git下，
-    然后下载下来进行相应的修改，如下图
+    打开 [intellij-platform-plugin-template](https://github.com/JetBrains/intellij-platform-plugin-template)
+    点击那个绿色按钮 Use this template 把这个项目copy到自己的Git下，然后下载下来进行相应的修改，如下图
 ![](https://raw.githubusercontent.com/sionsxie/arms-template-plugin/main/imgs/1.png)
 
 # 2.修改相应位置
@@ -19,7 +19,8 @@
            pluginSinceBuild = 201
            //这个是最大支持版本，一般不用改
            pluginUntilBuild = 203.*
-           //[版本来源说明](https://plugins.jetbrains.com/docs/intellij/android-studio.html?from=jetbrains.org#matching-versions-of-the-intellij-platform-with-the-android-studio-version)
+           //![版本来源说明]
+           //(https://plugins.jetbrains.com/docs/intellij/android-studio.html?from=jetbrains.org#matching-versions-of-the-intellij-platform-with-the-android-studio-version)
            platformVersion = 201.8743.12
            //是否下载ide源码
            platformDownloadSources = true
