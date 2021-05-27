@@ -82,7 +82,7 @@ class ArmsPluginTemplateProviderImpl : WizardTemplateProvider() {
     val activityLayoutName = stringParameter {
         name = "Activity Layout Name"
         constraints = listOf(Constraint.LAYOUT, Constraint.NONEMPTY)
-        suggest = { activityToLayout(pageName.value.toLowerCase()) }
+        suggest = { activityToLayout(pageName.value) }
         default = "activity_main"
         visible = { needActivity.value }
         help = "Activity 创建之前需要填写 Activity 的布局名,若布局已创建就直接填写此布局名,若还没创建此布局,请勾选下面的单选框"

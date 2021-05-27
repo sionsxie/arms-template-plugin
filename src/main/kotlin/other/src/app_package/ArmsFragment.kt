@@ -38,7 +38,7 @@ class ${provider.pageName.value}Fragment : SimpleBaseFragment<${provider.pageNam
                 .inject(this)
     }
     override fun initView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?):View{
-        return inflater.inflate(R.layout.${provider.fragmentLayoutName.value}, container, false);
+        return inflater.inflate(R.layout.${provider.fragmentLayoutName.value}, container, false)
     }
     /**
      * 在 onActivityCreate()时调用
