@@ -1,8 +1,8 @@
 package other
 
 import com.android.tools.idea.wizard.template.*
-import com.android.tools.idea.wizard.template.impl.activities.common.MIN_API
 import java.io.File
+
 
 /**
  * Created on 2021/4/19 16:53
@@ -12,13 +12,16 @@ import java.io.File
 class ArmsPluginTemplateProviderImpl : WizardTemplateProvider() {
     override fun getTemplates(): List<Template> = listOf(armsTemplate)
 
+
+    private val MIN_API = 16
+
     private val armsTemplate: Template
         get() = template {
-            revision = 1
+            //revision = 2
             name = "Arms 全家桶 插件版"
             description = "一键创建 MVPArms 单个页面所需要的全部组件"
             minApi = MIN_API
-            minBuildApi = MIN_API
+            //minBuildApi = MIN_API
             category = Category.Activity
             formFactor = FormFactor.Mobile
             screens = listOf(WizardUiContext.ActivityGallery, WizardUiContext.MenuEntry, WizardUiContext.NewProject, WizardUiContext.NewModule)

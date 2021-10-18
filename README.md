@@ -1,5 +1,10 @@
 ### Android Studio 4.1中的模板插件基本说明
 
+## 支持最新Android Studio 北极狐版本
+    Android Studio Arctic Fox | 2020.3.1 Patch 3
+    内部版本号 #AI-203.7717.56.2031.7784292，October 1, 2021 构建
+    运行时版本: 11.0.10+0-b96-7249189 amd64
+
 # 1.使用JetBrains IntelliJ 插件模板
 
     打开 [intellij-platform-plugin-template](https://github.com/JetBrains/intellij-platform-plugin-template)
