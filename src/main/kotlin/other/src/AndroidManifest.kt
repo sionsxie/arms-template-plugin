@@ -8,8 +8,8 @@ fun armsManifest(provider: ArmsPluginTemplateProviderImpl, data: ModuleTemplateD
     package="${provider.appPackageName.value}">
     <application>
 ${
-//    if (data.isNewModule) {
-    if (false) {
+    if (data.isNewModule) {
+//    if (false) {
         """
         <activity android:name="${provider.activityPackageName.value}.${provider.pageName.value}Activity"
          android:screenOrientation="portrait">
