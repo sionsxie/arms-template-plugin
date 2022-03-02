@@ -6,7 +6,7 @@ import java.util.*
 fun commonAnnotation(provider: ArmsPluginTemplateProviderImpl) = """
 /**
  * Created on ${SimpleDateFormat("yyyy/MM/dd HH:mm").format(Date(System.currentTimeMillis()))}
- * @author 谢况 
+ * @author Love_xie 
  * module name is ${provider.pageName.value}${if(provider.needActivity.value) "Activity" else "Fragment"}
  */
 """.trimIndent()

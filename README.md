@@ -1,9 +1,14 @@
 ### Android Studio 4.1中的模板插件基本说明
 
 ## 支持最新Android Studio 北极狐版本
-    Android Studio Arctic Fox | 2020.3.1 Patch 3
-    内部版本号 #AI-203.7717.56.2031.7784292，October 1, 2021 构建
-    运行时版本: 11.0.10+0-b96-7249189 amd64
+    Android Studio Bumblebee | 2021.1.1 Patch 2
+    内部版本号 #AI-211.7628.21.2111.8193401，February 17, 2022 构建
+    运行时版本: 11.0.11+9-b60-7590822 amd64
+
+## 下面几张图是修改的基本的配置和查询版本
+![](https://raw.githubusercontent.com/sionsxie/arms-template-plugin/main/imgs/4.png)
+![](https://raw.githubusercontent.com/sionsxie/arms-template-plugin/main/imgs/5.png)
+![](https://raw.githubusercontent.com/sionsxie/arms-template-plugin/main/imgs/6.png)
 
 # 1.使用JetBrains IntelliJ 插件模板
 
