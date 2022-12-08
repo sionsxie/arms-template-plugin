@@ -1,9 +1,11 @@
 ### Android Studio 4.1中的模板插件基本说明
 
 ## 支持最新Android Studio 北极狐版本
-    Android Studio Bumblebee | 2021.1.1 Patch 2
-    内部版本号 #AI-211.7628.21.2111.8193401，February 17, 2022 构建
-    运行时版本: 11.0.11+9-b60-7590822 amd64
+    Android Studio Dolphin | 2021.3.1 Patch 1
+    Build #AI-213.7172.25.2113.9123335, built on September 30, 2022
+    Runtime version: 11.0.13+0-b1751.21-8125866 amd64
+    VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
+
 
 ## 下面几张图是修改的基本的配置和查询版本
 ![](https://raw.githubusercontent.com/sionsxie/arms-template-plugin/main/imgs/4.png)
