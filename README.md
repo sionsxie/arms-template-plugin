@@ -1,10 +1,10 @@
 ### Android Studio 4.1中的模板插件基本说明
 
-## 支持最新Android Studio 北极狐版本
-    Android Studio Dolphin | 2021.3.1 Patch 1
-    Build #AI-213.7172.25.2113.9123335, built on September 30, 2022
-    Runtime version: 11.0.13+0-b1751.21-8125866 amd64
-    VM: OpenJDK 64-Bit Server VM by JetBrains s.r.o.
+## 有已经编译好了的plugin，在Releases目录下，可以直接用
+
+## 支持最新Android Studio
+    支持ideal 203 ~ 231.* 版本
+
 
 
 ## 下面几张图是修改的基本的配置和查询版本
@@ -29,7 +29,7 @@
            //如果不想调试各种版本兼容的话可以把 build.gradle.kts里的intellij里的updateSinceUntilBuild设置为false
            //这个是最小支持版本，就是Android Studio关于里的那个 #AI-201.8743.12. 这个AI后面的第一个数字 201
            pluginSinceBuild = 201
-           //这个是最大支持版本，一般不用改
+           //这个是最大支持版本，as版本更新之后，一般改改这里就行了（as对应的ideal的版本）
            pluginUntilBuild = 203.*
            //![版本来源说明]
            //(https://plugins.jetbrains.com/docs/intellij/android-studio.html?from=jetbrains.org#matching-versions-of-the-intellij-platform-with-the-android-studio-version)
