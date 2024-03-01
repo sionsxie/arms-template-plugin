@@ -1,33 +1,34 @@
+<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
     <id>com.github.sionsxie.armstemplateplugin</id>
     <name>arms-template-plugin</name>
-    <vendor url="http://www.baidu.com">sionsxie</vendor>
+    <vendor url="https://github.com/sionsxie/arms-template-plugin">sionsxie</vendor>
 
     <description>
         一键创建 MVPArms 单个页面所需要的全部组件&lt;br /&gt;
     </description>
 
+    <depends>com.intellij.modules.platform</depends>
     <!-- Product and plugin compatibility requirements -->
     <!-- https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
     <!-- https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html -->
     <depends>org.jetbrains.android</depends>
     <depends>org.jetbrains.kotlin</depends>
     <depends>com.intellij.modules.java</depends>
-    <depends>com.intellij.modules.platform</depends>
-<!--    <depends>com.intellij.modules.androidstudio</depends>-->
+    <!--    <depends>com.intellij.modules.androidstudio</depends>-->
+
+
+    <resource-bundle>messages.MyBundle</resource-bundle>
 
     <extensions defaultExtensionNs="com.intellij">
-        <applicationService serviceImplementation="com.github.sionsxie.armstemplateplugin.services.MyApplicationService"/>
-        <projectService serviceImplementation="com.github.sionsxie.armstemplateplugin.services.MyProjectService"/>
+        <toolWindow factoryClass="com.github.sionsxie.armstemplateplugin.template.toolWindow.MyToolWindowFactory" id="MyToolWindow"/>
     </extensions>
 
     <applicationListeners>
-        <listener class="com.github.sionsxie.armstemplateplugin.listeners.MyProjectManagerListener"
-                  topic="com.intellij.openapi.project.ProjectManagerListener"/>
+        <listener class="com.github.sionsxie.armstemplateplugin.template.listeners.MyApplicationActivationListener" topic="com.intellij.openapi.application.ApplicationActivationListener"/>
     </applicationListeners>
 
     <extensions defaultExtensionNs="com.android.tools.idea.wizard.template">
         <wizardTemplateProvider implementation="other.ArmsPluginTemplateProviderImpl" />
     </extensions>
-
 </idea-plugin>
